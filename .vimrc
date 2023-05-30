@@ -10,6 +10,7 @@ set tabstop=2
 let mapleader=' ' " Map leader key to be space
 syntax on
 filetype plugin indent on
+colorscheme codedark
 call plug#begin()
 " Plugin outside ~/.vim/plugged with post-update hook
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -22,6 +23,7 @@ Plug 'posva/vim-vue'
 Plug 'junegunn/fzf.vim' " {{{
     nnoremap <silent> <Leader>f     :Files<CR>
 " }}}
+Plug 'tomasiser/vim-code-dark'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
     nmap <Leader>gd <Plug>(coc-definition)
     nmap <Leader>gi <Plug>(coc-implementation)
