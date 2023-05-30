@@ -6,7 +6,7 @@ set mouse=a
 set ic
 set noswapfile
 set autoindent
-set tabstop=4
+set tabstop=2
 let mapleader=' ' " Map leader key to be space
 syntax on
 filetype plugin indent on
