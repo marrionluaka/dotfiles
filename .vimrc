@@ -10,7 +10,6 @@ set tabstop=2
 let mapleader=' ' " Map leader key to be space
 syntax on
 filetype plugin indent on
-color habamax
 call plug#begin()
 " Plugin outside ~/.vim/plugged with post-update hook
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
