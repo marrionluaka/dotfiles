@@ -23,6 +23,7 @@ Plug 'preservim/nerdtree' " {{{
 Plug 'posva/vim-vue'
 Plug 'junegunn/fzf.vim' " {{{
     nnoremap <silent> <Leader>f     :Files<CR>
+    nnoremap <silent> <Leader>b     :Buffers<CR>
 " }}}
 Plug 'tomasiser/vim-code-dark'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
