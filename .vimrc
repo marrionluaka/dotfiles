@@ -25,6 +25,13 @@ Plug 'junegunn/fzf.vim' " {{{
     nnoremap <silent> <Leader>f     :Files<CR>
     nnoremap <silent> <Leader>b     :Buffers<CR>
 " }}}
+Plug 'SirVer/ultisnips' " {{{
+	Plug 'honza/vim-snippets'
+
+	let g:UltiSnipsEditSplit="vertical"
+	let g:UltiSnipsJumpForwardTrigger="<c-b>"
+	let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+" }}}
 Plug 'tomasiser/vim-code-dark'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
     nmap <Leader>gd <Plug>(coc-definition)
