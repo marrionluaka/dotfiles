@@ -7,6 +7,7 @@ set ic
 set noswapfile
 set autoindent
 set tabstop=2
+set softtabstop=2
 set shiftwidth=2
 let mapleader=' ' " Map leader key to be space
 syntax on
