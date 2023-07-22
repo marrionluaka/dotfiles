@@ -9,6 +9,7 @@ set autoindent
 set tabstop=2
 set softtabstop=2
 set shiftwidth=2
+set number relativenumber
 let mapleader=' ' " Map leader key to be space
 syntax on
 filetype plugin indent on
@@ -39,9 +40,11 @@ Plug 'junegunn/fzf.vim' " {{{
 Plug 'SirVer/ultisnips' " {{{
 	Plug 'honza/vim-snippets'
 
+	let g:snips_author='marrionluaka'
 	let g:UltiSnipsEditSplit="vertical"
 	let g:UltiSnipsJumpForwardTrigger="<c-b>"
 	let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+	let g:UltiSnipsSnippetsDir='~/.vim/UltiSnips'
 " }}}
 Plug 'tomasiser/vim-code-dark'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -59,7 +62,8 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
                 \ 'coc-prettier',
                 \ 'coc-tailwindcss',
                 \ 'coc-tsserver',
-                \ 'coc-vetur'
+                \ 'coc-vetur',
+								\ 'coc-ultisnips',
                 \]
 call plug#end()
 colorscheme codedark
