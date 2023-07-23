@@ -1,9 +1,11 @@
 set nocompatible
 set regexpengine=0
 set number
+filetype plugin indent on
 set ignorecase smartcase incsearch
 set mouse=a
 set ic
+set backspace=indent,eol,start
 set noswapfile
 set autoindent
 set tabstop=2
@@ -12,7 +14,6 @@ set shiftwidth=2
 set number relativenumber
 let mapleader=' ' " Map leader key to be space
 syntax on
-filetype plugin indent on
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "                             Command-line mode                              "
@@ -36,6 +37,9 @@ Plug 'posva/vim-vue'
 Plug 'junegunn/fzf.vim' " {{{
     nnoremap <silent> <Leader>f     :Files<CR>
     nnoremap <silent> <Leader>b     :Buffers<CR>
+" }}}
+Plug 'ciaranm/detectindent' " {{{
+	autocmd BufReadPost * :DetectIndent
 " }}}
 Plug 'SirVer/ultisnips' " {{{
 	Plug 'honza/vim-snippets'
