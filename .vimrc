@@ -58,15 +58,16 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
     nmap <Leader>gy <Plug>(coc-type-definition)
     nmap <Leader>rn <Plug>(coc-rename)
     let g:coc_global_extensions = [
-                \ 'coc-css',
+								\ '@yaegassy/coc-volar',
+								\ '@yaegassy/coc-volar-tools',
                 \ 'coc-eslint',
+                \ 'coc-css',
                 \ 'coc-git',
                 \ 'coc-html',
                 \ 'coc-json',
                 \ 'coc-prettier',
                 \ 'coc-tailwindcss',
                 \ 'coc-tsserver',
-                \ 'coc-vetur',
 								\ 'coc-ultisnips',
                 \]
 call plug#end()
