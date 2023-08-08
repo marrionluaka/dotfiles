@@ -72,3 +72,8 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
                 \]
 call plug#end()
 colorscheme codedark
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"                                  Defaults                                  "
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+autocmd BufWritePre * :%s/\s\+$//e " Delete whitespace
