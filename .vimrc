@@ -31,7 +31,7 @@ Plug 'tpope/vim-commentary'
 Plug 'preservim/nerdtree' " {{{
     nnoremap <Leader>nt :NERDTreeToggle<CR>
     nnoremap <Leader>nf :NERDTreeFind<CR>
-		nnoremap <silent> <Leader>g :Rg<CR>
+    nnoremap <silent> <Leader>g :Rg<Space>
 " }}}
 Plug 'posva/vim-vue'
 Plug 'junegunn/fzf.vim' " {{{
