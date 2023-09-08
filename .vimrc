@@ -28,6 +28,7 @@ call plug#begin()
 " Plugin outside ~/.vim/plugged with post-update hook
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-fugitive'
 Plug 'preservim/nerdtree' " {{{
     nnoremap <Leader>nt :NERDTreeToggle<CR>
     nnoremap <Leader>nf :NERDTreeFind<CR>
