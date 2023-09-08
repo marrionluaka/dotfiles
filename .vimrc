@@ -29,6 +29,7 @@ call plug#begin()
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-surround'
 Plug 'preservim/nerdtree' " {{{
     nnoremap <Leader>nt :NERDTreeToggle<CR>
     nnoremap <Leader>nf :NERDTreeFind<CR>
