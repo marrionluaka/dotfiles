@@ -48,8 +48,9 @@ Plug 'SirVer/ultisnips' " {{{
 
 	let g:snips_author='marrionluaka'
 	let g:UltiSnipsEditSplit="vertical"
-	let g:UltiSnipsJumpForwardTrigger="<c-b>"
-	let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+	let g:UltiSnipsExpandTrigger="<tab>"
+	let g:UltiSnipsJumpForwardTrigger="<tab>"
+	let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 	let g:UltiSnipsSnippetsDir='~/.vim/UltiSnips'
 " }}}
 Plug 'tomasiser/vim-code-dark'
@@ -60,8 +61,8 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
     nmap <Leader>gy <Plug>(coc-type-definition)
     nmap <Leader>rn <Plug>(coc-rename)
     let g:coc_global_extensions = [
-								\ '@yaegassy/coc-volar',
-								\ '@yaegassy/coc-volar-tools',
+		\ '@yaegassy/coc-volar',
+		\ '@yaegassy/coc-volar-tools',
                 \ 'coc-eslint',
                 \ 'coc-css',
                 \ 'coc-git',
@@ -70,7 +71,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
                 \ 'coc-prettier',
                 \ 'coc-tailwindcss',
                 \ 'coc-tsserver',
-								\ 'coc-ultisnips',
+		\ 'coc-ultisnips',
                 \]
 call plug#end()
 colorscheme codedark
