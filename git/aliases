@@ -3,3 +3,6 @@
 	a = add
 	aa = add --all
 	ap = add -p
+
+	# Conflict
+	conflicts = diff --name-only --diff-filter=U --relative
