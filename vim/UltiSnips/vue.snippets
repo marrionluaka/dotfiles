@@ -1,5 +1,5 @@
 snippet comp "Vue component"
-<template lang="pug">
+<template>
 </template>
 
 <script lang="ts">
@@ -20,6 +20,16 @@ export default defineComponent({
 		$0
 	}
 })
+</script>
+endsnippet
+
+snippet comp3 "Vue 3 component"
+<template>
+	$1
+</template>
+
+<script lang="ts" setup>
+	$2
 </script>
 endsnippet
 
