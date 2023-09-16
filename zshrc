@@ -103,7 +103,6 @@ alias ghci='stack ghci'
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-
 hash -d dotfiles=~/Documents/dotfiles
 hash -d plygt=~/Documents/plygt
 hash -d web=~/Documents/vrify/vrify-web
