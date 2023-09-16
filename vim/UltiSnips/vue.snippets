@@ -34,7 +34,12 @@ snippet comp3 "Vue 3 component"
 endsnippet
 
 snippet ref "Vue3 ref" b
-const $1: Ref<$2> = ref($3);
+const $1 = ref<$2>($3)
+$0
+endsnippet
+
+snippet cmpt "Vue3 computed" b
+const $1 = computed(() => $2)
 $0
 endsnippet
 
