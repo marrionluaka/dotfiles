@@ -105,6 +105,6 @@ alias ghci='stack ghci'
 
 hash -d dotfiles=~/Documents/dotfiles
 hash -d plygt=~/Documents/plygt
-hash -d web=~/Documents/vrify/vrify-web
-hash -d cms=~/Documents/vrify/vrify-cms
+hash -d web=~/Documents/vrify-web
+hash -d cms=~/Documents/vrify-cms
 
