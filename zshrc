@@ -107,4 +107,5 @@ hash -d dotfiles=~/Documents/dotfiles
 hash -d plygt=~/Documents/plygt
 hash -d web=~/Documents/vrify-web
 hash -d cms=~/Documents/vrify-cms
+hash -d codereview=~/Documents/vrify-web-cr
 
