@@ -103,8 +103,9 @@ alias ghci='stack ghci'
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-hash -d dotfiles=~/Documents/dotfiles
+hash -d dotfiles=~/dotfiles
 hash -d plygt=~/Documents/plygt
 hash -d web=~/Documents/vrify-web
 hash -d cms=~/Documents/vrify-cms
+hash -d lib=~/Documents/vue-component-lib
 
