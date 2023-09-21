@@ -11,8 +11,9 @@ brew install \
     ripgrep \
     vim
 
- # Add the brew zsh shell to the list of allowed shells
+# Add the brew zsh shell to the list of allowed shells
 sudo bash -c 'echo /bin/zsh >> /etc/shells'
+# Change the default shell to use zsh
 chsh -s /bin/zsh
 
 # vim
