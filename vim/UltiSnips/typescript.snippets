@@ -17,6 +17,32 @@ describe('$1 specs', () => {
 })
 endsnippet
 
+snippet vuehookspec "Scaffolding for vue hooks specs" b
+import { mount, Wrapper } from '@vue/test-utils'
+import $1 from $2
+
+describe('$1 specs', () => {
+	let wrapper: Wrapper<Vue>
+	let sut: $3
+
+	beforeEach(${4: async}() => {
+		wrapper = mount(
+			{
+				template: '<div></div>',
+				setup() {
+					sut = $1($5)
+				}
+			},
+			{
+				localVue: setupLocalVue(),
+			}
+		)
+	})
+
+	it.todo('should $0')
+})
+endsnippet
+
 snippet ittodo "it.todo()" b
 it.todo('${1:should }$0')
 endsnippet

@@ -26,10 +26,17 @@ nnoremap <C-u> <C-u>zz
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 call plug#begin()
 " Plugin outside ~/.vim/plugged with post-update hook
+<<<<<<< Updated upstream
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' } " {{{
   xnoremap <silent> <Leader>rg    y:Rg <C-R>"<CR>
 " }}}
 Plug 'tpope/vim-commentary'
+=======
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'tomtom/tcomment_vim' " {{{
+	command! -range C <line1>,<line2>TComment
+" }}}
+>>>>>>> Stashed changes
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'preservim/nerdtree' " {{{
