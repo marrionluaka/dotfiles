@@ -41,6 +41,7 @@ Plug 'posva/vim-vue'
 Plug 'junegunn/fzf.vim' " {{{
     nnoremap <silent> <Leader>f     :Files<CR>
     nnoremap <silent> <Leader>b     :Buffers<CR>
+    xnoremap <silent> <Leader>rg    y:Rg <C-R>"<CR>
 " }}}
 Plug 'ciaranm/detectindent' " {{{
 	autocmd BufReadPost * :DetectIndent
