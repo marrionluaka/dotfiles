@@ -83,3 +83,13 @@ colorscheme codedark
 "                                  Defaults                                  "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 autocmd BufWritePre * :%s/\s\+$//e " Delete whitespace
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"                                  Scripts                                   "
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+command! UpPlug call UpdatePlugins()
+function! UpdatePlugins ()
+	PlugUpgrade
+	PlugClean
+	PlugInstall
+	PlugUpdate
+endfunction
