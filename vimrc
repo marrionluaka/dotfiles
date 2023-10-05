@@ -57,6 +57,7 @@ Plug 'SirVer/ultisnips' " {{{
 	let g:UltiSnipsSnippetsDir='~/.vim/UltiSnips'
 " }}}
 Plug 'tomasiser/vim-code-dark'
+Plug 'markonm/traces.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
     nmap <Leader>gd <Plug>(coc-definition)
     nmap <Leader>gi <Plug>(coc-implementation)
@@ -74,7 +75,8 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
                 \ 'coc-prettier',
                 \ 'coc-tailwindcss',
                 \ 'coc-tsserver',
-		\ 'coc-ultisnips',
+								\ 'coc-ultisnips',
+								\ 'coc-copilot',
                 \]
 call plug#end()
 colorscheme codedark
