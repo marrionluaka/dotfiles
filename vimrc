@@ -77,7 +77,6 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
                 \ 'coc-tailwindcss',
                 \ 'coc-tsserver',
 								\ 'coc-ultisnips',
-								\ 'coc-copilot',
                 \]
 call plug#end()
 colorscheme codedark
