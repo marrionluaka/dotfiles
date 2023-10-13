@@ -20,6 +20,7 @@ syntax on
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 nnoremap <C-d> <C-d>zz
 nnoremap <C-u> <C-u>zz
+nnoremap <silent> <Leader><TAB> :set relativenumber!<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "                                  Plugins                                   "
