@@ -108,3 +108,12 @@ snippet vnt "await wrapper.vm.$nextTick()" b
 await wrapper.vm.$nextTick()
 endsnippet
 
+snippet composable "vue composable" b
+export interface `!p snip.rv = snip.basename[0].upper() + snip.basename[1:]` {
+}
+
+export function `!p snip.rv = snip.basename`(): `!p snip.rv = snip.basename[0].upper() + snip.basename[1:]` {
+	$0
+}
+endsnippet
+
