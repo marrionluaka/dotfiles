@@ -6,14 +6,18 @@ import $1 from $2
 describe('$1 specs', () => {
 	let wrapper: Wrapper<Vue>
 
-	beforeEach(${4: async}() => {
+	beforeEach(${3:${VISUAL}}() => {
 		wrapper = mount($1, {
 			${4: propsData}: {},
-			localVue: setupLocalVue()
+			${5: localVue: setupLocalVue()}
 		})
 	})
 
-	it.todo('should $0')
+	// renders
+	it.todo('should $6')
+
+	// interactions
+	it.todo('should $7')
 })
 endsnippet
 
@@ -25,7 +29,7 @@ describe('$1 specs', () => {
 	let wrapper: Wrapper<Vue>
 	let sut: $3
 
-	beforeEach(${4: async}() => {
+	beforeEach(${4:${VISUAL}}() => {
 		wrapper = mount(
 			{
 				template: '<div></div>',
@@ -91,8 +95,8 @@ snippet jsonstr "JSON.stringify()" i
 JSON.stringify(${1:${VISUAL}}, null, 2);$0
 endsnippet
 
-snippet log "console.log()" i
-console.log($1)$0
+snippet log "console.log();"
+console.log(${VISUAL}$0);
 endsnippet
 
 snippet wgk "console.log()" i
