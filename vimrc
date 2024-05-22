@@ -13,7 +13,7 @@ set softtabstop=2
 set shiftwidth=2
 set number relativenumber
 let mapleader=' ' " Map leader key to be space
-syntax on
+syntax off
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "                             Command-line mode                              "
@@ -21,6 +21,7 @@ syntax on
 nnoremap <C-d> <C-d>zz
 nnoremap <C-u> <C-u>zz
 nnoremap <silent> <Leader><TAB> :set relativenumber!<CR>
+nnoremap <silent> <Leader><ENTER> :if exists("g:syntax_on") \| syntax off \| else \| syntax on \| endif<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "                                  Plugins                                   "
