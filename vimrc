@@ -23,8 +23,18 @@ nnoremap <silent> <Leader><TAB> :set relativenumber!<CR>
 nnoremap <silent> <Leader><ENTER> :if exists("g:syntax_on") \| syntax off \| else \| syntax on \| endif<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"                             Search					     "
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+nnoremap <silent> <Leader><Space> :set hls!<CR>
+nnoremap <silent> # :set hls<CR>#
+nnoremap <silent> * :set hls<CR>*
+nnoremap <silent> ? :set hls<CR>?
+nnoremap <silent> / :set hls<CR>/
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "                                  Plugins                                   "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 call plug#begin()
 " Plugin outside ~/.vim/plugged with post-update hook
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
