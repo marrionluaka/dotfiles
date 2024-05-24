@@ -13,7 +13,6 @@ set softtabstop=2
 set shiftwidth=2
 set number relativenumber
 let mapleader=' ' " Map leader key to be space
-syntax off
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "                             Command-line mode                              "
@@ -59,7 +58,8 @@ Plug 'SirVer/ultisnips' " {{{
 	let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 	let g:UltiSnipsSnippetsDir='~/.vim/UltiSnips'
 " }}}
-Plug 'tomasiser/vim-code-dark'
+" Plug 'tomasiser/vim-code-dark'
+Plug 'robertmeta/nofrils'
 Plug 'markonm/traces.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
     nmap <Leader>gd <Plug>(coc-definition)
@@ -81,7 +81,8 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 								\ 'coc-ultisnips',
                 \]
 call plug#end()
-colorscheme codedark
+" colorscheme codedark
+colorscheme nofrils-dark
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "                                  Defaults                                  "
