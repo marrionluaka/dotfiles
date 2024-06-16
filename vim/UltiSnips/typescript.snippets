@@ -117,8 +117,10 @@ await wrapper.vm.$nextTick()
 endsnippet
 
 snippet composable "vue composable" b
-export interface `!p snip.rv = snip.basename[0].upper() + snip.basename[1:]` {
-}
+type State = {}
+
+export type `!p snip.rv = snip.basename[0].upper() + snip.basename[1:]` = {
+} & ToRefs<DeepReadonly<State>>
 
 export function `!p snip.rv = snip.basename`(): `!p snip.rv = snip.basename[0].upper() + snip.basename[1:]` {
 	$0
