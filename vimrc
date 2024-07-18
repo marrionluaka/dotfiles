@@ -7,6 +7,7 @@ set mouse=a
 set ic
 set backspace=indent,eol,start
 set noswapfile
+set hidden
 set autoindent
 set hidden
 set tabstop=2
@@ -48,7 +49,7 @@ Plug 'tpope/vim-surround'
 Plug 'preservim/nerdtree' " {{{
     nnoremap <Leader>nt :NERDTreeToggle<CR>
     nnoremap <Leader>nf :NERDTreeFind<CR>
-    nnoremap <silent> <Leader>g :Rg<Space>
+    nnoremap <silent> <Leader>rg :Rg<Space>
 " }}}
 Plug 'posva/vim-vue'
 Plug 'junegunn/fzf.vim' " {{{
