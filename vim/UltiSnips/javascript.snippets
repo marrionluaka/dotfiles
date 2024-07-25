@@ -1,0 +1,123 @@
+extends html, css
+
+# Tests
+snippet vuespec "Test scaffolding for vue" b
+import { mount, Wrapper } from '@vue/test-utils'
+import $1 from $2
+
+describe('$1 specs', () => {
+	let wrapper: Wrapper<Vue>
+
+	beforeEach(${3:${VISUAL}}() => {
+		wrapper = mount($1, {
+			${4: propsData}: {},
+			${5: localVue: setupLocalVue()}
+		})
+	})
+
+	// renders
+	it.todo('should $6')
+
+	// interactions
+	it.todo('should $7')
+})
+endsnippet
+
+snippet vuehookspec "Scaffolding for vue hooks specs" b
+import { mount, Wrapper } from '@vue/test-utils'
+import $1 from $2
+
+describe('$1 specs', () => {
+	let wrapper: Wrapper<Vue>
+	let sut: $3
+
+	beforeEach(${4:${VISUAL}}() => {
+		wrapper = mount(
+			{
+				template: '<div></div>',
+				setup() {
+					sut = $1($5)
+				}
+			},
+			{
+				localVue: setupLocalVue(),
+			}
+		)
+	})
+
+	it.todo('should $0')
+})
+endsnippet
+
+snippet ittodo "it.todo()" b
+it.todo('${1:should }$0')
+endsnippet
+
+snippet des "describe(thing, () => { ... })" b
+describe(${1:}, () => {
+	${0:${VISUAL}}
+});
+endsnippet
+
+snippet befe "beforeEach(() => { ... })" b
+beforeEach(() => {
+	${1:${VISUAL}}
+});
+$0
+endsnippet
+
+snippet afte "afterEach(() => { ... })" b
+afterEach(() => {
+	${1:${VISUAL}}
+});
+$0
+endsnippet
+
+snippet jf "jest.fn()" i
+jest.fn()
+endsnippet
+
+snippet ita "it() async" b
+it('$1', ${2:async }() => {
+	$0
+})
+endsnippet
+
+snippet wfd "wrapper.find('[data-testid'']')" i
+wrapper.find('[data-testid="$1"]')$0
+endsnippet
+
+snippet wnt "await wrapper.vm.$nextTick()" i
+await wrapper.vm.$nextTick()
+$0
+endsnippet
+
+# Vanilla Js
+snippet jsonstr "JSON.stringify()" i
+JSON.stringify(${1:${VISUAL}}, null, 2);$0
+endsnippet
+
+snippet log "console.log();"
+console.log(${VISUAL}$0);
+endsnippet
+
+snippet wgk "console.log()" i
+console.log('watashi ga kita!', ${1:${VISUAL}})$0
+endsnippet
+
+snippet kcm "console.log()" i
+console.log('kocchi wo miro!', ${1:${VISUAL}})$0
+endsnippet
+
+snippet hmf "console.log(here mf:);"
+console.log(${2:'}here mofo $1$2, ${1:${VISUAL}}$0);
+endsnippet
+
+snippet sst "Surround in string template" i
+\`${${1:${VISUAL}}}\`
+endsnippet
+
+# Vue
+snippet vnt "await wrapper.vm.$nextTick()" b
+await wrapper.vm.$nextTick()
+endsnippet
