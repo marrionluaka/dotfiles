@@ -43,10 +43,7 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'tomtom/tcomment_vim' " {{{
 	command! -range C <line1>,<line2>TComment
 " }}}
-<<<<<<< Updated upstream
 Plug 'github/copilot.vim'
-=======
->>>>>>> Stashed changes
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'preservim/nerdtree' " {{{
