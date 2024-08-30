@@ -23,6 +23,7 @@ nnoremap <C-d> <C-d>zz
 nnoremap <C-u> <C-u>zz
 nnoremap <silent> <Leader><TAB> :set relativenumber!<CR>
 nnoremap <silent> <Leader><ENTER> :if exists("g:syntax_on") \| syntax off \| else \| syntax on \| endif<CR>
+nnoremap <silent> <Leader>gn :vsplit note:notes<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "                             Search					     "
@@ -43,7 +44,10 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'tomtom/tcomment_vim' " {{{
 	command! -range C <line1>,<line2>TComment
 " }}}
+Plug 'xolox/vim-misc'
+Plug 'xolox/vim-notes'
 Plug 'github/copilot.vim'
+Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'preservim/nerdtree' " {{{
