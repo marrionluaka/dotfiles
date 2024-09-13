@@ -2,55 +2,48 @@ extends html, css
 
 # Tests
 snippet vuespec "Test scaffolding for vue" b
-import { mount, Wrapper } from '@vue/test-utils'
+import { vi, expect, test, describe, beforeEach, type Mock } from 'vitest'
 import $1 from $2
 
 describe('$1 specs', () => {
-	let wrapper: Wrapper<Vue>
-
 	beforeEach(${3:${VISUAL}}() => {
-		wrapper = mount($1, {
+		mount($1, {
 			${4: propsData}: {},
-			${5: localVue: setupLocalVue()}
 		})
 	})
 
 	// renders
-	it.todo('should $6')
+	test.todo('should $6')
 
 	// interactions
-	it.todo('should $7')
+	test.todo('should $7')
 })
 endsnippet
 
 snippet vuehookspec "Scaffolding for vue hooks specs" b
-import { mount, Wrapper } from '@vue/test-utils'
+import { vi, expect, test, describe, beforeEach, type Mock } from 'vitest'
 import $1 from $2
 
 describe('$1 specs', () => {
-	let wrapper: Wrapper<Vue>
 	let sut: $3
 
 	beforeEach(${4:${VISUAL}}() => {
-		wrapper = mount(
+		mount(
 			{
-				template: '<div></div>',
+				template: '<div />',
 				setup() {
 					sut = $1($5)
 				}
-			},
-			{
-				localVue: setupLocalVue(),
 			}
 		)
 	})
 
-	it.todo('should $0')
+	test.todo('should $0')
 })
 endsnippet
 
-snippet ittodo "it.todo()" b
-it.todo('${1:should }$0')
+snippet ttodo "it.todo()" b
+test.todo('${1:should }$0')
 endsnippet
 
 snippet des "describe(thing, () => { ... })" b
@@ -73,12 +66,12 @@ afterEach(() => {
 $0
 endsnippet
 
-snippet jf "jest.fn()" i
-jest.fn()
+snippet vi "vi.fn()" i
+vi.fn()
 endsnippet
 
 snippet ita "it() async" b
-it('$1', ${2:async }() => {
+test('$1', ${2:async }() => {
 	$0
 })
 endsnippet
