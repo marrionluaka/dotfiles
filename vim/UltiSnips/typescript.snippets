@@ -1,13 +1,22 @@
 extends javascript
 
 snippet composable "vue composable" b
+import type { DeepReadonly, ToRefs } from 'vue'
+import { reactive, readonly, toRefs } from 'vue'
+
 type State = {}
 
 export type `!p snip.rv = snip.basename[0].upper() + snip.basename[1:]` = {
 } & ToRefs<DeepReadonly<State>>
 
 export function `!p snip.rv = snip.basename`(): `!p snip.rv = snip.basename[0].upper() + snip.basename[1:]` {
+	const state = reactive<State>({})
+
 	$0
+
+	return {
+		...toRefs(readonly(state)),
+	}
 }
 endsnippet
 
