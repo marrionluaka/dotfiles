@@ -5,7 +5,9 @@ snippet comp "Vue component"
 </template>
 
 <script lang="ts">
-import { defineComponent } from '@vue/composition-api'
+import { defineComponent, reactive } from '@vue/composition-api'
+
+type State = {}
 
 export default defineComponent({
 	name: '$1',
@@ -19,7 +21,12 @@ export default defineComponent({
 	${4:emits: [],}
 
 	setup(props, ctx) {
+		const state = reactive<State>({})
 		$0
+
+		return {
+			state,
+		}
 	}
 })
 </script>
@@ -34,7 +41,19 @@ snippet comp3 "Vue 3 component"
 </template>
 
 <script lang="ts" setup>
+type State = {}
+
+const props = defineProps<{
 	$2
+}>()
+
+const emits = defineEmits<[$3]>()
+
+const state = reactive<{
+	$4
+}>($5)
+
+$2
 </script>
 
 ${5:<style lang="stylus" scoped>
