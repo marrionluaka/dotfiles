@@ -1,6 +1,7 @@
 #!/bin/bash
 
 brew install \
+	asdf \
     bash \
 	zsh \
     curl \
@@ -8,6 +9,7 @@ brew install \
     git \
     gnu-sed \
     htop \
+	tmux \
     ripgrep \
     vim
 
