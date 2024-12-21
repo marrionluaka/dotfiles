@@ -110,3 +110,4 @@ hash -d cms=~/Documents/vrify-cms
 hash -d lib=~/Documents/vue-component-lib
 hash -d codereview=~/Documents/vrify-web-cr
 
+. $HOME/.asdf/asdf.sh
