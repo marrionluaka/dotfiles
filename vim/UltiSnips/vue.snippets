@@ -30,9 +30,6 @@ export default defineComponent({
 	}
 })
 </script>
-
-${5:<style lang="stylus" scoped>
-</style>}
 endsnippet
 
 snippet comp3 "Vue 3 component"
@@ -47,17 +44,7 @@ const props = defineProps<{
 	$2
 }>()
 
-const emits = defineEmits<[$3]>()
-
-const state = reactive<{
-	$4
-}>($5)
-
-$2
-</script>
-
-${5:<style lang="stylus" scoped>
-</style>}
+const state = reactive<State>({})
 endsnippet
 
 snippet ref "Vue3 ref" b
