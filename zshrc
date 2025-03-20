@@ -100,7 +100,7 @@ source $ZSH/oh-my-zsh.sh
 
 #alias ghci
 alias ghci='stack ghci'
-alias gbf='gb | fzf'
+alias gbf='git checkout $(gb | fzf)'
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
