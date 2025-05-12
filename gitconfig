@@ -1,0 +1,25 @@
+[user]
+	name = marrionluaka
+	email = marrion91300@gmail.com
+[core]
+	editor = vim
+	excludesfile = ~/.ignore
+[push]
+	default = simple
+[pull]
+	rebase = true
+[fetch]
+	prune = true
+[merge]
+	tool = vimdiff
+[rebase]
+	autosquash = true
+[commit]
+	verbose = true
+[status]
+	showStash = true
+[include]
+	path = ./git/aliases
+
+#[init]
+#	templatedir = ~/dotfiles/git/git_template
