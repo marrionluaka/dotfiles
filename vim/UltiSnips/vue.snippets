@@ -70,3 +70,23 @@ watchEffect(() => {
 })
 endsnippet
 
+snippet props "props" b
+const props = defineProps<{
+	$1
+}>()
+endsnippet
+
+snippet propsd "props with defaults" b
+const props = withDefaults(defineProps<{
+	$1
+}>(), {
+	$2
+})
+endsnippet
+
+snippet emit "emit" b
+const emit = defineEmits<{
+	(event: 'update', value: $1): void
+}>()
+endsnippet
+
