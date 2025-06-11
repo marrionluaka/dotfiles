@@ -106,6 +106,7 @@ alias gbf='git checkout $(gb | fzf)'
 
 hash -d dotfiles=~/dotfiles
 hash -d plygt=~/Documents/plygt
+hash -d plygt-api=~/Documents/plygtco-api
 hash -d web=~/Documents/vrify-web
 hash -d dora=~/Documents/vrify-dora
 hash -d cms=~/Documents/vrify-cms
