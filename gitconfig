@@ -19,7 +19,7 @@
 [status]
 	showStash = true
 [include]
-	path = ./git/aliases
+	path = ~/dotfiles/git/aliases
 
 #[init]
 #	templatedir = ~/dotfiles/git/git_template
