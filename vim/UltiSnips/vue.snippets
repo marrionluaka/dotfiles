@@ -60,7 +60,6 @@ endsnippet
 
 snippet watch "watch()" b
 watch($1, ${2: async }${3:()} => {
-	${0: console.log("$1:", $1)}
 }, { immediate: true })
 endsnippet
 
@@ -86,7 +85,7 @@ endsnippet
 
 snippet emit "emit" b
 const emit = defineEmits<{
-	(event: 'update', value: $1): void
+	(e: '$1'): void
 }>()
 endsnippet
 
