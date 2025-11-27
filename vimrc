@@ -65,6 +65,7 @@ Plug 'junegunn/fzf.vim' " {{{
 Plug 'ciaranm/detectindent' " {{{
 	autocmd BufReadPost * :DetectIndent
 " }}}
+Plug 'AndrewRadev/splitjoin.vim'
 Plug 'SirVer/ultisnips' " {{{
 	Plug 'honza/vim-snippets'
 
