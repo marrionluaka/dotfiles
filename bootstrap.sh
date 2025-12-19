@@ -33,4 +33,4 @@ echo "so ~/dotfiles/vimrc" >> ~/.vimrc
 echo "source ~/dotfiles/zshrc" >> ~/.zshrc
 
 # aider
-ln -sf ~/dotfiles/.aider.yml.conf ~/.aider.yml.conf
+ln -sf ~/dotfiles/.aider.conf.yml ~/.aider.conf.yml
