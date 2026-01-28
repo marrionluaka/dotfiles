@@ -114,4 +114,4 @@ hash -d web=~/Documents/vrify-web
 hash -d dora=~/Documents/vrify-dora
 hash -d cms=~/Documents/vrify-cms
 hash -d lib=~/Documents/vue-component-lib
-hash -d codereview=~/Documents/vrify-web-cr
+hash -d codereview=~/Documents/codereview
