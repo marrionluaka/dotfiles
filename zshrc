@@ -108,6 +108,7 @@ alias gbf='git checkout $(gb | fzf)'
 # . $HOME/.asdf/completions/asdf.bash
 
 hash -d dotfiles=~/dotfiles
+hash -d notes=~/Documents/work_notes
 hash -d plygt=~/Documents/plygt
 hash -d api=~/Documents/plygtco-api
 hash -d web=~/Documents/vrify-web
