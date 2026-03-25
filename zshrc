@@ -68,7 +68,7 @@ ZSH_THEME="bira"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git nvm)
+plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -112,7 +112,4 @@ hash -d notes=~/Documents/work_notes
 hash -d plygt=~/Documents/plygt
 hash -d api=~/Documents/plygtco-api
 hash -d web=~/Documents/vrify-web
-hash -d dora=~/Documents/vrify-dora
-hash -d cms=~/Documents/vrify-cms
-hash -d lib=~/Documents/vue-component-lib
 hash -d codereview=~/Documents/codereview
