@@ -78,8 +78,9 @@ Plug 'SirVer/ultisnips' " {{{
 " }}}
 Plug 'godlygeek/tabular'
 Plug 'preservim/vim-markdown'
-" The 'do' hook ensures the preview server is built/installed
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
+Plug 'junegunn/limelight.vim'
+Plug 'junegunn/goyo.vim'
 " Plug 'tomasiser/vim-code-dark'
 Plug 'robertmeta/nofrils'
 Plug 'markonm/traces.vim'
