@@ -78,7 +78,8 @@ Plug 'SirVer/ultisnips' " {{{
 " }}}
 Plug 'godlygeek/tabular'
 Plug 'preservim/vim-markdown'
-Plug 'drewipson/glowing-vim-markdown-preview'
+" The 'do' hook ensures the preview server is built/installed
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
 " Plug 'tomasiser/vim-code-dark'
 Plug 'robertmeta/nofrils'
 Plug 'markonm/traces.vim'
@@ -117,8 +118,11 @@ let g:vim_markdown_strikethrough = 1        " enable ~~strikethrough~~
 let g:vim_markdown_toc_autofit = 1
 let g:vim_markdown_new_list_item_indent = 2 " match your existing shiftwidth
 
-" glowing-vim-markdown-preview (uses glow you already have)
-nnoremap <Leader>mp :MarkdownPreviewToggle<CR>
+" Set the shortcut to toggle the preview
+nmap <Leader>mp <Plug>MarkdownPreviewToggle
+
+" Optional: Close the preview tab when you switch buffers or close the file
+let g:mkdp_auto_close = 1
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "                                  Defaults                                  "
