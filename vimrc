@@ -76,6 +76,9 @@ Plug 'SirVer/ultisnips' " {{{
 	let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 	let g:UltiSnipsSnippetsDir='~/.vim/UltiSnips'
 " }}}
+Plug 'godlygeek/tabular'
+Plug 'preservim/vim-markdown'
+Plug 'drewipson/glowing-vim-markdown-preview'
 " Plug 'tomasiser/vim-code-dark'
 Plug 'robertmeta/nofrils'
 Plug 'markonm/traces.vim'
@@ -101,6 +104,21 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 " colorscheme codedark
 colorscheme nofrils-dark
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"                               Markdown                                     "
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" vim-markdown
+let g:vim_markdown_folding_disabled = 1     " disable auto-folding (you control it)
+let g:vim_markdown_conceal = 0              " show raw syntax (easier when editing)
+let g:vim_markdown_conceal_code_blocks = 0
+let g:vim_markdown_frontmatter = 1          " highlight YAML front matter
+let g:vim_markdown_strikethrough = 1        " enable ~~strikethrough~~
+let g:vim_markdown_toc_autofit = 1
+let g:vim_markdown_new_list_item_indent = 2 " match your existing shiftwidth
+
+" glowing-vim-markdown-preview (uses glow you already have)
+nnoremap <Leader>mp :MarkdownPreviewToggle<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "                                  Defaults                                  "
