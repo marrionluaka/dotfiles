@@ -103,9 +103,6 @@ alias ghci='stack ghci'
 alias gbf='git checkout $(gb | fzf)'
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
-# . $HOME/.asdf/asdf.sh
-# . $HOME/.asdf/completions/asdf.bash
 
 hash -d dotfiles=~/dotfiles
 hash -d notes=~/Documents/work_notes
@@ -113,6 +110,3 @@ hash -d plygt=~/Documents/workspace/plygt
 hash -d api=~/Documents/workspace/plygtco-api
 hash -d web=~/workspace/web-monorepo
 hash -d codereview=~/Documents/codereview
-
-# Make node trust our MITM cert
-export NODE_EXTRA_CA_CERTS="/Library/Application Support/Cloudflare/installed_cert.pem"
