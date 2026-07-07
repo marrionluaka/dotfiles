@@ -109,7 +109,7 @@ hash -d notes=~/Documents/work_notes
 hash -d plygt=~/Documents/workspace/plygt
 hash -d api=~/Documents/workspace/plygtco-api
 hash -d web=~/workspace/web-monorepo
-hash -d codereview=~/workspace/web-monorepo/codereview
+hash -d codereview=~/workspace/codereview
 
 # Scripts
 source ~/dotfiles/scripts/git_helpers.zsh
