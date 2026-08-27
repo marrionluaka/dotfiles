@@ -50,6 +50,9 @@ Plug 'github/copilot.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-fugitive'
+Plug 'will133/vim-dirdiff' " {{{
+	let g:DirDiffWindowSize = 6
+" }}}
 Plug 'tpope/vim-surround'
 Plug 'preservim/nerdtree' " {{{
     nnoremap <Leader>nt :NERDTreeToggle<CR>
@@ -132,6 +135,38 @@ autocmd BufWritePre * :%s/\s\+$//e " Delete whitespace
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "                                  Scripts                                   "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Fuzzy-pick a file changed on this branch and diff it side-by-side against the default branch
+command! ReviewBranch call s:ReviewBranch()
+nnoremap <silent> <Leader>gv :ReviewBranch<CR>
+
+function! s:ReviewBranch() abort
+	let l:base = s:DefaultBranch()
+	call fzf#run(fzf#wrap({
+		\ 'source': 'git diff --name-only ' . l:base . '...HEAD',
+		\ 'sink': function('s:ReviewBranchFile', [l:base])
+		\ }))
+endfunction
+
+function! s:ReviewBranchFile(base, file) abort
+	let l:root = trim(system('git rev-parse --show-toplevel'))
+	execute 'edit' fnameescape(l:root . '/' . a:file)
+	execute 'Gvdiffsplit' trim(system('git merge-base ' . a:base . ' HEAD'))
+endfunction
+
+function! s:DefaultBranch() abort
+	let l:ref = trim(system('git symbolic-ref --short refs/remotes/origin/HEAD 2>/dev/null'))
+	if !v:shell_error && !empty(l:ref)
+		return l:ref
+	endif
+	for l:branch in ['origin/main', 'origin/master', 'main', 'master']
+		call system('git rev-parse --verify --quiet ' . l:branch)
+		if !v:shell_error
+			return l:branch
+		endif
+	endfor
+	return 'origin/main'
+endfunction
+
 command! UpPlug call UpdatePlugins()
 function! UpdatePlugins ()
 	PlugUpgrade

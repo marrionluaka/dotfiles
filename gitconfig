@@ -12,6 +12,8 @@
 	prune = true
 [merge]
 	tool = vimdiff
+[difftool "dirdiff"]
+	cmd = vim -f \"+DirDiff $LOCAL $REMOTE\"
 [rebase]
 	autosquash = true
 [commit]

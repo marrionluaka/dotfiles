@@ -110,6 +110,7 @@ hash -d plygt=~/Documents/workspace/plygt
 hash -d api=~/Documents/workspace/plygtco-api
 hash -d web=~/workspace/web-monorepo
 hash -d codereview=~/workspace/codereview
+hash -d megatest=~/workspace/megatest/
 
 # Scripts
 source ~/dotfiles/scripts/git_helpers.zsh
