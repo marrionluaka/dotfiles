@@ -11,7 +11,7 @@
 	b = branch
 	bd = branch -d
 	bD = branch -D
- bda = "!git branch --format='%(refname:short)' | grep -v \"^$(git branch --show-current)$\" | xargs -n1 git branch -d"
+ bda = "!git branch --format='%(refname:short)' | grep -v \"^$(git branch --show-current)$\" | xargs -n1 git branch -D"
 	bm = branch --move
 	bv = branch -a -vv
 
